@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kong">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/imagens"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/kong"/>
+
+            <TextView
+                style="@style/texts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:text="Godzilla vs Kong"
+                android:textAlignment="center" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Data lançamento: 25 de março de 2021 (Brasil)" /></TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Diretor: Adam Wingard" /></TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Séries de filmes: Godzilla" /></TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Roteiro: Max Borenstein, Eric Pearson" /></TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Produtoras: Warner Bros. Pictures, Legendary" /></TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="      Pictures" /></TableRow>
+
+
+            </TableLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200px"
+                android:onClick="voltar"
+                android:text="Voltar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:onClick="filmes"
+                android:src="@drawable/movies"/>
+
+            <TextView
+                style="@style/texts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="filmes"
+                android:text="Filmes"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:onClick="generos"
+                android:src="@drawable/genres" />
+
+            <TextView
+                style="@style/texts"
+                android:onClick="generos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generos"
+                android:textAlignment="center" />
+
+            <TextView
+                style="@style/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55pt"
+                android:text="Funcionamento: Segunda a Sexta das 14H as 22H"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

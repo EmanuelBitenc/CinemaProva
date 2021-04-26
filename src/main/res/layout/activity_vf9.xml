@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vf9">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/imagens"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/vf9"/>
+
+            <TextView
+                style="@style/texts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:text="Velozes e Furiosos 9"
+                android:textAlignment="center" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Data de lançamento: 19 de maio de 2021" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Diretor: Justin Lin" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Música composta por: Brian Tyler" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Produção: Vin Diesel, Justin Lin, Samantha Vincent,"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="      Jeff Kirschenbaum, Clayton Townsend, Neal H." />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="      Moritz, Joe Roth" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_marginLeft="15px"
+                        android:text="Produtoras: Universal Studios, One Race Films,"/>
+
+                </TableRow>
+                <TableRow>
+                <TextView
+                    android:layout_marginLeft="15px"
+                    android:text="      Original Film, Roth/Kirschenbaum Films"/>
+            </TableRow>
+
+
+            </TableLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140px"
+                android:onClick="voltar"
+                android:text="Voltar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
